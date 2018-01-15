@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection"content="telephone=no" />
+        <title>笔记详情</title>
+        <link rel="stylesheet" href="./css/reset.css" type="text/css">
+        <link rel="stylesheet" href="./css/main_shared.css" type="text/css">
+        <script src="./js/index.js"></script>
+    </head>
+    <body>
+        <div class="top">www.zhouy.tp</div>
+        <div class="head">
+            <ul id="menu">
+                <div><li><a href="index.html">FUTURE IMPERFECT</a><i></i></li></div>
+                <li class="hide"><a href="https://aspurple.github.io/dear/" class="line" target="_blank">我的相册</a><i></i></li>
+                <li class="hide curr"><a href="note_list.html" class="line">学习笔记</a><i></i></li>
+                <li class="hide"><a href="#" class="line">心情记录</a><i></i></li>
+                <li class="hide"><a href="message.html">留言列表</a><i></i></li>
+            </ul>
+            <div class="search">
+                <span id="s_img" class="side_search"><input type="text" id="s_ipt" placeholder="Search"></span>
+                <span class="side_menu" id="side_menu"></span>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="main">
+                    <!-- 以下是一个需要独立出来的部分 -->
+                    <link rel="stylesheet" href="./css/list_shared.css">
+                    <div class="right">
+                        <div class="right_head">
+                            <a href="#"><img src="./asset/images/logo.jpg" alt="Logo"></a>
+                            <h2>FUTURE IMPERFECT</h2>
+                            <span>这里可以放一句主题寄语啥的都可以</span>
+                        </div>
+                        <span class="l_search"><input type="text" id="side_ipt" placeholder="Search"></span>
+                        <div class="r_list tag">                                
+                            <ul>
+                                <li><a href="#">前端笔记(15)</a></li>
+                                <li><a href="#">Asp.Net(12)</a></li>
+                                <li><a href="#">Javascript(16)</a></li>
+                                <li><a href="#">CSharp(22)</a></li>
+                                <li><a href="#">C语言笔记(24)</a></li>
+                            </ul>
+                        </div>
+                        <div class="r_list r_article">
+                            <!-- 左下 Article 开始 -->
+                            <div class="r_item">
+                                <a href="#"><img src="./asset/images/pic08.jpg" alt=""></a>
+                                <a href="#" class="r_item_title">另一个主题的文章标题</a>
+                                <span class="r_item_date">Sunday<i>&nbsp;</i>1992.08.20</span>
+                            </div>
+                            <!-- 左下 Article 结束 -->
+                        </div>
+                        <!-- 以下脚本用于添加 r_article 里的 Article -->
+                        <script>
+                            var list = document.getElementsByClassName("r_article")[0];
+                            var cont = list.innerHTML;
+                            for(var i=0;i<4;i++){
+                                list.innerHTML+=cont;
+                            }
+                        </script>
+                    </div>
+                
+                    <div class="left">
+                        <link rel="stylesheet" href="./css/detail.css">
+                        <div class="detail">
+                            <div class="operation">
+                                <a href="#" class="like" title="喜欢">128</a>
+                                <a href="#" class="discuss" title="评论">24</a>
+                                <a href="note_list.html" class="back" title="返回列表">返回列表</a>
+                            </div>
+                            <h4>笔记的大标题</h4>
+                            <p id="descrip"><span class="readed">128</span><span class="time">2018.1.13</span></p>
+                            <div id="cont">
+                                我的主题之前都有评论的美化，但是后期因为评论楼层出现错乱，导致暂时关闭了这个功能吗，一直未找到最佳的结局办法，直到最近看见“橙色阳光”的博客，才算是有了完美的解决办法。
+                                其实针对评论部分的标签调用是集成了评论楼号的，即标签{$comment.FloorID}。
+                                我的主题之前都有评论的美化，但是后期因为评论楼层出现错乱，导致暂时关闭了这个功能吗，一直未找到最佳的结局办法，直到最近看见“橙色阳光”的博客，才算是有了完美的解决办法。
+                                其实针对评论部分的标签调用是集成了评论楼号的，即标签{$comment.FloorID}。
+这个标签是不计算子评论的，所以并不是采用key直接计算出的楼号。经过测试会发现，这个楼号存在一定BUG。如果开启了评论倒序，楼号依然是从输出的第一条开始计算楼层，这样并不方便大家的使用。所以，橙色阳光设计出了这个倒序评论的简易逻辑。
+                            </div>
+                        </div>
+                        <span id="tags"><span class="tag">Javascript</span><span class="tag">Angular</span><span class="tag">前端笔记</span></span>
+                        <div class="dis">
+                            <h4><span>评论列表</span></h4>
+                        </div>
+                        <div class="null" style="display: none">还没有人评论过~</div>
+                        <ul class="dislist">
+                            <li class="disitem"><p class="disname">Aspurple<span>：</span></p><p class="discont">我的主题之前都有评论的美化</p><p class="distime">2018.01.13</p></li>
+                            <li class="disitem"><p class="disname">Aspurple<span>：</span></p><p class="discont">直到最近看见“橙色阳光”的博客，才算是有了完美的解决办法</p><p class="distime">2018.01.13</p></li>
+                        </ul>
+                        <div class="send">
+                            <h4><span>发表评论</span></h4>
+                            <div class="sendbox"><label for="username">你的名字：</label><input type="text" id="username" placeholder="你的名字..."></div>
+                            <div class="sendbox content"><label for="content">你想说的：</label><textarea type="text" id="content" placeholder="你想说的..."></textarea></div>
+                        </div>
+                        <a href="javascript:void(0)" class="sendbtn">发送</a>
+                    </div>
+                    <!-- 独立部分结束 -->
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                Copyright © : ZhouHanlin&nbsp;&nbsp;2045616225@qq.com<br>
+                123
+            </div>
+        </div>
+
+        <div class="side_wrap" id="side_wrap"></div>
+        <div class="side" id="side">
+            <span class="side_search"><input type="text" id="side_ipt" placeholder="Search"></span>
+            <ul>
+                <a href="#"><li class="side_line">我的相册<br><br><span>这里是简介</span></li></a>
+                <a href="#"><li class="side_line">我的文章<br><br><span>这里是简介</span></li></a>
+                <a href="#"><li class="side_line">我的记录<br><br><span>这里是简介</span></li></a>
+                <a href="#"><li>给我留言<br><br><span>这里是简介</span></li></a>
+            </ul>
+            <a href="#" id="manage">登陆后台</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+.detail{
+    color: #000;
+    position: relative;
+    padding: 48px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    box-shadow: 0 0 16px #cec7c7;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+.detail h4{
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.detail>p{
+    box-sizing: content-box;
+    font-size: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    color: rgb(88,88,88);
+    text-align: right;
+    border-bottom: 1px dashed #cec7c7;
+}
+.detail>p span,#tags span{
+    display: inline-block;
+    padding-left: 24px;
+    margin-left: 12px;
+}
+#tags{
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+    font-size: 12px;
+    color: rgb(88,88,88);
+}
+#tags .tag{
+    background: url(../asset/images/stag.png) no-repeat 0 center;
+}
+.readed{
+    background: url(../asset/images/readed.png) no-repeat 0 center;
+}
+.time{
+    background: url(../asset/images/time.png) no-repeat 0 center;
+}
+#cont{
+    text-align: justify;
+}
+.operation{
+    position: absolute;
+    bottom: 8px;
+    right: 48px;
+}
+.operation a{
+    display: inline-block;
+    padding-left: 24px;
+    margin-left: 16px;
+    color: rgb(88,88,88);
+    font-size: 12px;
+}
+.operation a:hover{
+    color: #63B8FF;
+}
+.like{
+    background: url(../asset/images/like.png) no-repeat 0 center;
+}
+.discuss{
+    background: url(../asset/images/discuss.png) no-repeat 0 center;
+}
+.operation .back{
+    background: url(../asset/images/back.png) no-repeat 0 center;
+    padding-left: 20px;
+}
+.dis{
+    font-family: Arial;
+    padding: 48px 0;
+    margin-top: 24px;
+}
+.send{
+    margin-top: 24px;
+}
+.dis h4,.send h4{
+    font-size: 16px;
+    color: rgb(88, 88, 88);
+    line-height: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cec7c7;
+}
+.dis h4 span{
+    display: inline-block;
+    padding-left: 26px;
+    background: url(../asset/images/dis.png) no-repeat 0 center;
+}
+.send h4 span{
+    display: inline-block;
+    padding-left: 26px;
+    background: url(../asset/images/dis.png) no-repeat 0 center;
+}
+.dislist,.null{
+    padding: 24px 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+.null{
+    text-align: center;
+    color: rgb(2, 59, 102);
+    font-size: 16px;
+    background: url(../asset/images/nodis.png) no-repeat 20% 10%;
+}
+.dislist .disname{
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.dislist .discont{
+    padding-left: 2em;
+    margin-bottom: 16px;
+}
+.dislist .distime{
+    text-align: right;
+    font-size: 12px;
+}
+.disitem{
+    padding: 16px 24px;
+    border-radius: 5px;
+    box-shadow: 0 0 16px #cec7c7;
+    background: url(../asset/images/star.png) no-repeat 80% 20%;
+    margin-bottom: 16px;
+}
+.send h4{
+    margin-bottom: 24px;
+}
+.sendbox{
+    margin-bottom: 24px;
+    border-bottom: 2px solid #bbbfe2;
+}
+.sendbox label{
+    font-size: 14px;
+    color: #545881;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sendbox input,.sendbox textarea{
+    font-family: Arial;
+    line-height: 24px;
+    margin-top: 2px;
+    color: rgb(88,88,88);
+    border: none;
+    background-color: #fff;
+    width: 90%;
+    height: 2rem;
+    font-size: 14px;
+    background-color: inherit;
+    outline: none;
+    resize: none;
+    padding: 8px 5%;
+}
+.sendbox textarea{
+    border-bottom: 2px solid #bbbfe2;
+}
+.send .content{
+    border: none;
+}
+.sendbtn{
+    color: rgb(88,88,88);
+    display: inline-block;
+    padding: 4px 24px;
+    border: 1px solid #cec7c7;
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+    border-radius: 5px;
+}
+.sendbtn:hover{
+    color: #63B8FF;
+    border-color: #63B8FF;
+}

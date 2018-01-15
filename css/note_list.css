@@ -1,0 +1,127 @@
+/* 左侧主列表 */
+.note{
+    position: relative;
+    padding: 48px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    box-shadow: 0 0 16px #cec7c7;
+    margin-bottom: 24px;
+}
+.left>a{
+    color: #252525;
+}
+.left>a:hover{
+    color: #63B8FF;
+}
+.note h4{
+    padding: 0 0 16px;
+    font-size: 16px;
+}
+.note p{
+    margin-bottom: 8px;
+}
+.note .stat{
+    font-size: 12px;
+    position: absolute;
+    bottom: 16px;
+    right: 48px;
+}
+.note .stat span{
+    display: block;
+    padding-left: 28px;
+    float: right;
+    margin-left: 16px;
+    font-size: 12px;
+}
+.like{
+    background: url(../asset/images/like.png) no-repeat 0 center;
+}
+.time{
+    background: url(../asset/images/time.png) no-repeat 0 center;
+}
+.readed{
+    background: url(../asset/images/readed.png) no-repeat 0 center;
+}
+
+/* 响应式 */
+@media screen and (max-width: 1440px){
+    .main .right{
+        width: 268px;
+    }
+    .main .left{
+        margin-right: 320px;
+    }
+
+    .note{
+        padding: 40px;
+    }
+    .note .stat{
+        bottom: 8px;
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .main .right{
+        width: 256px;
+    }
+    .main .left{
+        margin-right: 298px;
+    }
+    .note{
+        padding: 32px;
+    }
+    .note .stat{
+        bottom: 4px;
+        right: 32px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .right .r_article{
+        display: none;
+    }
+    .l_search{
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .right_head{
+        padding-bottom: 24px;
+    }
+    .main .right{
+        width: 200px;
+    }
+    .main .left{
+        margin-right: 228px;
+    }
+    .note{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .main .right{
+        display: none;
+    }
+    .main .left{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 572px){
+    #load{
+        width: 80%;
+        margin-left: -40%;
+        bottom: 16px;
+    }
+    .note .stat span{
+        padding-left: 24px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection"content="telephone=no" />
+        <title>给我留言</title>
+        <link rel="stylesheet" href="./css/reset.css" type="text/css">
+        <link rel="stylesheet" href="./css/main_shared.css" type="text/css">
+        <script src="./js/index.js"></script>
+    </head>
+    <body>
+        <div class="top">www.zhouy.tp</div>
+        <div class="head">
+            <ul id="menu">
+                <div><li><a href="index.html">FUTURE IMPERFECT</a><i></i></li></div>
+                <li class="hide"><a href="https://aspurple.github.io/dear/" class="line" target="_blank">我的相册</a><i></i></li>
+                <li class="hide"><a href="note_list.html" class="line">学习笔记</a><i></i></li>
+                <li class="hide"><a href="#" class="line">心情记录</a><i></i></li>
+                <li class="hide curr"><a href="message.html">留言列表</a><i></i></li>
+            </ul>
+            <div class="search">
+                <span id="s_img" class="side_search"><input type="text" id="s_ipt" placeholder="Search"></span>
+                <span class="side_menu" id="side_menu"></span>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="main">
+                    <!-- 以下是一个需要独立出来的部分 -->
+                    <link rel="stylesheet" href="./css/list_shared.css">
+                    <div class="right">
+                        <div class="right_head">
+                            <a href="#"><img src="./asset/images/logo.jpg" alt="Logo"></a>
+                            <h2>FUTURE IMPERFECT</h2>
+                            <span>这里可以放一句主题寄语啥的都可以</span>
+                        </div>
+                        <span class="l_search"><input type="text" id="side_ipt" placeholder="Search"></span>
+                        <div class="r_list tag">                                
+                            <ul>
+                                <li><a href="#">前端笔记(15)</a></li>
+                                <li><a href="#">Asp.Net(12)</a></li>
+                                <li><a href="#">Javascript(16)</a></li>
+                                <li><a href="#">CSharp(22)</a></li>
+                                <li><a href="#">C语言笔记(24)</a></li>
+                            </ul>
+                        </div>
+                        <div class="r_list r_article">
+                            <!-- 左下 Article 开始 -->
+                            <div class="r_item">
+                                <a href="#"><img src="./asset/images/pic08.jpg" alt=""></a>
+                                <a href="#" class="r_item_title">另一个主题的文章标题</a>
+                                <span class="r_item_date">Sunday<i>&nbsp;</i>1992.08.20</span>
+                            </div>
+                            <!-- 左下 Article 结束 -->
+                        </div>
+                        <!-- 以下脚本用于添加 r_article 里的 Article -->
+                        <script>
+                            var list = document.getElementsByClassName("r_article")[0];
+                            var cont = list.innerHTML;
+                            for(var i=0;i<4;i++){
+                                list.innerHTML+=cont;
+                            }
+                        </script>
+                    </div>
+                
+                    <div class="left">
+                        <a href="javascript:void(0)" id="load">加载更多</a>
+                        <!-- 以下内容在不同模块页面进行替换，当前为给我留言模块 -->
+                        <link rel="stylesheet" href="./css/message.css">
+                        <div class="msg">
+                                <a href="javascript:void(0)">发表留言</a>
+                                <div class="user">
+                                    <img src="./asset/images/avatar.jpg" alt="">
+                                    <p class="username"><span class="label">昵称：</span><span>aspurple</span></p>
+                                    <p class="address" ><span class="label">来自：</span><span>安徽芜湖</span></p>
+                                </div>
+                                <div class="msg_cont">
+                                    <p class="time"><span class="label">发表于：</span><span>2018.1.13</span></p>
+                                    <p class="refer" style="display:none;"><span class="label">回复&nbsp;»&nbsp;</span><span>Zhouy</span></p>
+                                    <div class="msgbox">
+                                        这里是留言内容
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="msg">
+                            <a href="javascript:void(0)">发表留言</a>
+                            <div class="user">
+                                <img src="./asset/images/avatar.jpg" alt="">
+                                <p class="username"><span class="label">昵称：</span><span>aspurple</span></p>
+                                <p class="address" ><span class="label">来自：</span><span>安徽芜湖</span></p>
+                            </div>
+                            <div class="msg_cont">
+                                <p class="time"><span class="label">发表于：</span><span>2018.1.13</span></p>
+                                <p class="refer"><span class="label">回复&nbsp;»&nbsp;</span><span>Zhouy</span></p>
+                                <div class="msgbox">
+                                    这里是留言内容
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 替换部分结束 -->
+                    </div>
+                    <!-- 独立部分结束 -->
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                Copyright © : ZhouHanlin&nbsp;&nbsp;2045616225@qq.com<br>
+                123
+            </div>
+        </div>
+
+        <div class="side_wrap" id="side_wrap"></div>
+        <div class="side" id="side">
+            <span class="side_search"><input type="text" id="side_ipt" placeholder="Search"></span>
+            <ul>
+                <a href="#"><li class="side_line">我的相册<br><br><span>这里是简介</span></li></a>
+                <a href="#"><li class="side_line">我的文章<br><br><span>这里是简介</span></li></a>
+                <a href="#"><li class="side_line">我的记录<br><br><span>这里是简介</span></li></a>
+                <a href="#"><li>给我留言<br><br><span>这里是简介</span></li></a>
+            </ul>
+            <a href="#" id="manage">登陆后台</a>
+        </div>
+
+    </body>
+</html>

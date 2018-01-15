@@ -1,0 +1,177 @@
+.msg{
+    color: #000;
+    position: relative;
+    padding: 48px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    box-shadow: 0 0 16px #cec7c7;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+.msg a{
+    display: block;
+    position: absolute;
+    color: rgb(88,88,88);
+    border-bottom: 1px dotted #bebebe;
+    bottom: 8px;
+    right: 48px;
+}
+.msg a:hover{
+    color: #63B8FF;
+    border-color: #63B8FF;
+}
+.msg p{
+    margin: 0;
+    padding: 0;
+}
+.msg .user{
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    float: left;
+}
+.msg .user img{
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+}
+.msg .username,.msg .address{
+    margin: 12px 0 0;
+    padding: 0;
+}
+.msg .msg_cont{
+    margin: 0;
+    padding: 0;
+    margin-left: 180px;
+}
+.msg .time{
+    line-height: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #cec7c7;
+}
+.msg .refer{
+    margin: 12px 0 0;
+    padding-bottom: 2px;
+    border-bottom: 1px dashed #cec7c7;
+}
+.msgbox{
+    padding-top: 12px;
+    color: rgb(88,88,88);
+}
+.label{
+
+}
+
+/* 响应式 */
+@media screen and (max-width: 1440px){
+    .main .right{
+        width: 268px;
+    }
+    .main .left{
+        margin-right: 320px;
+    }
+
+    .msg{
+        padding: 40px;
+    }
+    .msg a{
+        bottom: 8px;
+        right: 40px;
+    }
+    .msg .msg_cont{
+        margin-left: 172px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .main .right{
+        width: 256px;
+    }
+    .main .left{
+        margin-right: 298px;
+    }
+    .msg{
+        padding: 32px;
+    }
+    .msg a{
+        bottom: 4px;
+        right: 32px;
+    }
+    .msg .msg_cont{
+        margin-left: 164px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .right .r_article{
+        display: none;
+    }
+    .l_search{
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .right_head{
+        padding-bottom: 24px;
+    }
+    .main .right{
+        width: 200px;
+    }
+    .main .left{
+        margin-right: 228px;
+    }
+    .msg .user{
+        width: 140px;
+    }
+    .msg{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .msg a{
+        bottom: 2;
+        right: 30px;
+    }
+    .msg .msg_cont{
+        margin-left: 154px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .main .right{
+        display: none;
+    }
+    .main .left{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 572px){
+    #load{
+        width: 80%;
+        margin-left: -40%;
+        bottom: 16px;
+    }
+    .note .stat span{
+        padding-left: 24px;
+        margin-left: 10px;
+    }
+    .msg .user{
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 16px;
+        border-bottom: 1px dashed #cec7c7;
+        margin-bottom: 16px;
+    }
+    .msg .user p,.msg .user img{
+        float: left;
+        margin-right: 16px;
+    }
+    .msg .msg_cont{
+        margin-left: 0;
+    }
+}

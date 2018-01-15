@@ -1,0 +1,36 @@
+.img_animation{
+    animation: img 200ms;
+    -moz-animation: img 200ms;
+    -webkit-animation: img 200ms;
+    -o-animation: img 200ms;
+}
+
+
+@keyframes img
+{
+    from {width: 100%;}
+    to {width: 110%;}
+}
+
+@-moz-keyframes img /* Firefox */
+{
+    from {width: 100%;}
+    to {width: 110%;}
+}
+
+@-webkit-keyframes img /* Safari 和 Chrome */
+{
+    from {width: 100%;}
+    to {width: 110%;}
+}
+
+@-o-keyframes img /* Opera */
+{
+    from {width: 100%;}
+    to {width: 110%;}
+}
+
+
+
+
+

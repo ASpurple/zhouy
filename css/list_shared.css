@@ -1,0 +1,128 @@
+.main .right{
+    float: right;
+    width: 280px;
+}
+.main .left{
+    position: relative;
+    margin-right: 340px;
+    padding-bottom: 56px;
+}
+.right_head{
+    width: 100%;
+    padding: 2px 0 36px 0;
+    color: #646464;
+    line-height: 32px;
+    overflow: hidden;
+}
+.right_head img{
+    width: 68px;
+    height: 68px;
+    border-radius: 5px;
+}
+.right_head h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #363535;
+}
+.right_head span{
+    font-size: 14px;
+}
+.r_list{
+    border-top: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 36px 0;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+}
+.right .r_article{
+    border: none;
+}
+.r_list .r_item{
+    box-sizing: content-box;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 24px 24px 0;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+.r_list .r_item:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.r_list .r_item img{
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+.r_item_title,.r_item_date{
+    display: block;
+    margin-left: 78px;
+}
+.r_list .r_item .r_item_title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #363535;
+}
+.r_list .r_item .r_item_title:hover{
+    color: #63B8FF;
+}
+.r_list .r_item .r_item_date{
+    font-size: 14px;
+    font-weight: normal;
+    color: #646464;
+}
+/* 左边大小 Article 处理最后一个的下边框和下方padding */
+.r_item:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.l_search{
+    display: block;
+    border: 2px solid #c5c4c4;
+    overflow: hidden;
+    height: 44px;
+    line-height: 44px;
+    background: url("../asset/images/search.png") no-repeat 20px center;
+    cursor: pointer;
+    margin-bottom: 36px;
+}
+.l_search #side_ipt{
+    height: 24px;
+    line-height: 24px;
+    margin-left: 62px;
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+}
+.main .right .tag{
+    padding: 16px 0;
+}
+.tag ul li{
+    padding: 16px 0 16px 36px;
+    font-size: 14px;
+    background: url("../asset/images/tag.png") no-repeat 0 center;
+}
+.tag ul li a{
+    color: #252525;
+}
+.tag ul li a:hover{
+    color: #63B8FF;
+}
+#load{
+    color: #646464;
+    display: block;
+    position: absolute;
+    height: 36px;
+    line-height: 36px;
+    width: 140px;
+    text-align: center;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -70px;
+    border: 1px solid #c5c4c4;
+}
+#load:hover{
+    color: #63B8FF;
+    border: 1px solid #63B8FF;
+}
